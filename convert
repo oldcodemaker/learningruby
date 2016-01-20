@@ -1,0 +1,17 @@
+#convert.rb for challenge 2
+puts "Which Temperature Scale are you currently using?"
+puts "F for fahrenheit, C for Celcius, or K for Kelvin"
+scale = gets.chomp
+puts "What temperature do you have?"
+temperature = gets.to_f
+case scale
+when "f", "F"
+	puts "#{temperature} Fahrenheit = #{(temperature - 32) * 5.0/9.0} C and #{((temperature + 459.67) * (5.0/9.0))} K"
+when "c", "C"
+	puts "#{temperature} Celcius = #{((temperature * 9.0/5.0) + 32)} F and #{temperature + 273.15} K"
+when "k", "K"
+	puts "#{temperature} Kelvin = #{((temperature * 9.0/5.0) - 459.67)} F and #{temperature - 273.15} C"
+else 
+	puts "You didn't input a real temperature scale"
+end
+
