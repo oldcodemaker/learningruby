@@ -1,6 +1,5 @@
 puts "Please input a 4 digit year and I'll tell you if it is a leap year or not."
 def leap_year
-  input_year = 0
   input_year = gets.to_i
   if input_year <= 0
     puts 'Please try inputting 4 digits again!'
@@ -15,4 +14,3 @@ def leap_year
   end
 end
 puts leap_year
-Enter file contents here
